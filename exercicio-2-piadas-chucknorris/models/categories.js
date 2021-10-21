@@ -6,13 +6,6 @@ const getCategories = async () => {
   return data;
 };
 
-const getJoke = async (category) => {
-  const url = `https://api.chucknorris.io/jokes/random?category=${category}`;
-  const { data } = await axios.get(url);
-  return data.value;
-};
-
 module.exports = {
   getCategories,
-  getJoke,
 };
